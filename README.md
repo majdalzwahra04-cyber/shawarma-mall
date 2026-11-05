@@ -1,0 +1,161 @@
+[index.html](https://github.com/user-attachments/files/34447170/index.html)
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>شورما مول - الصفحة الرئيسية</title>
+    
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #1e1e1e;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .hero-header {
+            background: linear-gradient(135deg, #ff8f00, #ff6f00);
+            color: #000;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .hero-header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .hero-header p {
+            margin: 10px 0 0 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .content-body {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #ffb300;
+            font-size: 20px;
+            border-right: 4px solid #ffb300;
+            padding-right: 10px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* شبكة التنقل لتشمل الـ 5 صفحات مع العروض */
+        ul.nav-grid {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+
+        ul.nav-grid a {
+            display: block;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            text-align: center;
+            padding: 16px 10px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid #444;
+            transition: all 0.3s ease;
+        }
+
+        ul.nav-grid a:hover {
+            background-color: #ffb300;
+            color: #000000;
+            border-color: #ffb300;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 179, 0, 0.4);
+        }
+
+        .info-card {
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #383838;
+        }
+
+        .info-card p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        address {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- الترويسة العليا -->
+        <div class="hero-header">
+            <h1>شورما مول 🌯</h1>
+            <p>خيارك الأفضل لألذ وجبات الشاورما والوجبات السريعة في الزرقاء</p>
+        </div>
+
+        <div class="content-body">
+
+            <!-- قسم التنقل بين الصفحات الخمس -->
+            <nav>
+                <h2>أقسام المنيو والتنقل</h2>
+                <ul class="nav-grid">
+                    <li><a href="index.html" style="background-color: #ffb300; color: #000;">الرئيسية</a></li>
+                    <li><a href="shawarma.html">أنواع الشاورما</a></li>
+                    <li><a href="snacks.html">السناكس والبرغر</a></li>
+                    <li><a href="chicken.html">الدجاج والبروستد</a></li>
+                    <li><a href="offers.html">العروض</a></li>
+                </ul>
+            </nav>
+
+            <!-- قسم عن المطعم -->
+            <div class="info-card">
+                <h2>عن شورما مول</h2>
+                <p>نقدم لكم أشهى السندويشات والوجبات العائلية والبروستد بأعلى جودة وأفضل الأسعار.</p>
+                <p><strong>ساعات العمل:</strong> يومياً من الساعة 11:00 صباحاً حتى 2:00 بعد منتصف الليل.</p>
+            </div>
+
+            <!-- قسم التواصل والدليفري -->
+            <div class="info-card">
+                <h2>معلومات التواصل الطلب والدليفري 🚗</h2>
+                <address>
+                    <p><strong>خدمة التواصي والتوصيل:</strong> 053855666</p>
+                    <p><strong>العنوان:</strong> الزرقاء - دوار معصوم</p>
+                    <p><strong>طرق الدفع المتاحة:</strong> كاش | فيزا (Visa) | أورانج ماني (Orange Money) | كليك (CliQ)</p>
+                </address>
+            </div>
+
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://majdzalwahra04-cyber.github.io/shawarma-mall/" alt="Shawarma Mall QR Code" style="display: block;">
+
+        </div>
+
+    </div>
+
+</body>
+</html>
