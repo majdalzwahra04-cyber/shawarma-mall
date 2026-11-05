@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>شورما مول - السناكس والبرغر والطلبات</title>
+    
+    <!-- التصميم العصري المعتمد للموقع -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 950px;
+            background-color: #1e1e1e;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .hero-header {
+            background: linear-gradient(135deg, #ff8f00, #ff6f00);
+            color: #000;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .hero-header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .content-body {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #ffb300;
+            font-size: 20px;
+            border-right: 4px solid #ffb300;
+            padding-right: 10px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* شبكة التنقل العلوية */
+        ul.nav-grid {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        ul.nav-grid a {
+            display: block;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid #444;
+            transition: all 0.3s ease;
+        }
+
+        ul.nav-grid a:hover {
+            background-color: #ffb300;
+            color: #000000;
+            border-color: #ffb300;
+        }
+
+        /* تنسيق الجداول */
+        .menu-card {
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #383838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: right;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            color: #ffb300;
+            font-size: 17px;
+        }
+
+        td {
+            color: #e0e0e0;
+            font-size: 15px;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 179, 0, 0.05);
+        }
+
+        .price {
+            color: #ffb300;
+            font-weight: bold;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- ترويسة الصفحة -->
+        <div class="hero-header">
+            <h1>منشور شاورما مول - السناكس والبرغر 🍔</h1>
+            <p>أطيب السناكس، البرغر، والطلبات الجانبية في الزرقاء</p>
+        </div>
+
+        <div class="content-body">
+
+            <!-- شريط التنقل -->
+            <nav>
+                <ul class="nav-grid">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="shawarma.html">أنواع الشاورما</a></li>
+                    <li><a href="snacks.html" style="background-color: #ffb300; color: #000;">البرغر والبروستد</a></li>
+                    <li><a href="chicken.html">الدجاج ب أنواعه</a></li>
+					<li><a href="offers.html">العروض</a></li>
+                </ul>
+            </nav>
+
+            <!-- 1. قسم السناكس -->
+            <div class="menu-card">
+                <h2>أولاً: السناكس (فرنسي / تورتيلا / شراك)</h2>
+                <p class="note">الوجبات تشمل: بطاطا 300 غم + بيسي ماتريكس + مخلل 75 غم + صوص جبنة 100 غم</p>
+                <table>
+                    <tr>
+                        <th>الصنف</th>
+                        <th>المكونات والتفاصيل</th>
+                        <th>سندويش</th>
+                        <th>وجبة</th>
+                    </tr>
+                    <tr>
+                        <td>زنجر حار أو بارد</td>
+                        <td>صدر دجاج 200 غم مقلي (حار أو بارد) + خس + جبنة شيدر + تيركي + مايونيز</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>فاهيتا</td>
+                        <td>صدر دجاج مبهّر 100 غم + فلفل حلو + فطر + مايونيز + خس + جبنة موزاريلا</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>باربكيو</td>
+                        <td>صدر دجاج مبهّر 100 غم + فلفل حلو + باربكيو صوص + خس + مايونيز + مكس أجبان (جبنة موزاريلا + جبنة شيدر)</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>فيلادلفيا</td>
+                        <td>صدر دجاج مبهّر 100 غم + فطر + زيتون أسود + فليفلة + مكس أجبان (جبنة موزاريلا + جبنة شيدر) + خس + مايونيز + بصل</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>هوت دوج جامبو</td>
+                        <td>هوت دوج (200 غم) + خس + كاتشب + جبنة شيدر + ماسترد صوص + باربكيو صوص + مايونيز</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>ماشروم بالكريمة</td>
+                        <td>صدر دجاج مبهّر 100 غم + خس + كريمة + فطر + زيتون أسود + مكس أجبان (موزاريلا + جبنة شيدر)</td>
+                        <td class="price">1.75</td>
+                        <td class="price">3.25</td>
+                    </tr>
+                    <tr>
+                        <td>تشكن مكسيكي</td>
+                        <td>صدر دجاج مبهّر 100 غم + هالبينو + صوص صوت + فطر + زيتون أسود + فليفلة + جبنة موزاريلا + خس + مايونيز + بصل</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>تيركي مع جبنة (بخبز التورتيلا)</td>
+                        <td>خس + مايونيز + مكس أجبان (موزاريلا + جبنة شيدر) + تيركي</td>
+                        <td class="price">1.25</td>
+                        <td class="price">2.50</td>
+                    </tr>
+                    <tr>
+                        <td>ستيك دجاج</td>
+                        <td>صدر دجاج مبهّر 100 غم + بصل + فليفلة + فطر + كريمة + ستيك صوص + خس + مايونيز + مكس أجبان (جبنة موزاريلا + جبنة شيدر)</td>
+                        <td class="price">1.75</td>
+                        <td class="price">3.00</td>
+                    </tr>
+                    <tr>
+                        <td>هوت دوج مع بيض</td>
+                        <td>نقانق (100 غم) + جبنة شيدر + ماسترد صوص + خس + كاتشب + بصل + بيض + فلفل حلو + مايونيز</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>هوت دوج بالموزاريلا والكريمة</td>
+                        <td>هوت دوج (200 غم) + فلفل ألوان + بصل + كريمة + موزاريلا + مخلل + مايونيز + كاتشب</td>
+                        <td class="price">2.00</td>
+                        <td class="price">3.25</td>
+                    </tr>
+                    <tr>
+                        <td>كوردن بلو</td>
+                        <td>200 غم صدر دجاج محشي جبنة وتيركي + خس + مايونيز</td>
+                        <td class="price">1.75</td>
+                        <td class="price">3.25</td>
+                    </tr>
+                    <tr>
+                        <td>زنجر مول (حار أو بارد)</td>
+                        <td>قطعتين زنجر + خس + سبشال صوص مول + روست بييف + جبنة شيدر + الفريدو صوص + فطر + كريمة + جبنة موزاريلا + أعشاب إيطالية</td>
+                        <td class="price">2.40</td>
+                        <td class="price">3.75</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 2. قسم البرغر -->
+            <div class="menu-card">
+                <h2>ثانياً: البرغر</h2>
+                <p class="note">الوجبات تشمل: بطاطا 300 غم + بيسي ماتريكس + مخلل 75 غم + صوص جبنة 100 غم</p>
+                <table>
+                    <tr>
+                        <th>الصنف</th>
+                        <th>المكونات والتفاصيل</th>
+                        <th>سندويش</th>
+                        <th>وجبة</th>
+                    </tr>
+                    <tr>
+                        <td>سكالوب دجاج</td>
+                        <td>قطعة سكالوب مقلية (100 غم) + خس + جبنة شيدر + بندورة + مايونيز + كاتشب</td>
+                        <td class="price">1.20</td>
+                        <td class="price">2.50</td>
+                    </tr>
+                    <tr>
+                        <td>برغر بالبيض</td>
+                        <td>قطعة برغر (100 غم) + بيضة + جبنة شيدر + خس + بندورة + بصل + صوص برغر</td>
+                        <td class="price">1.50</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>برغر دجاج جريل</td>
+                        <td>قطعة برغر 100 غم مشوي + خس + تيركي + جبنة شيدر + بندورة مشوية + فلفل حلو + بصل مشوي + كوككتيل صوص</td>
+                        <td class="price">1.75</td>
+                        <td class="price">3.00</td>
+                    </tr>
+                    <tr>
+                        <td>برغر 100 غم</td>
+                        <td>قطعة برغر 100 غم + خس + بندورة + روست بييف محمص + جبنة شيدر + صوص برغر</td>
+                        <td class="price">1.20</td>
+                        <td class="price">2.50</td>
+                    </tr>
+                    <tr>
+                        <td>سكالوب دجاج دبل</td>
+                        <td>قطعتين سكالوب مقلي 100 غم (200 غم) + خس + جبنة شيدر + بندورة + مايونيز + كاتشب</td>
+                        <td class="price">2.00</td>
+                        <td class="price">3.25</td>
+                    </tr>
+                    <tr>
+                        <td>مايتي برغر 150 غم</td>
+                        <td>قطعة برغر 150 غم + خس + روست بييف + فطر + بصل + صوص برغر + مكس أجبان + صوص باربكيو + ماسترد صوص</td>
+                        <td class="price">2.00</td>
+                        <td class="price">3.25</td>
+                    </tr>
+                    <tr>
+                        <td>برغر مول</td>
+                        <td>قطعتين برغر 100 غم + خس + بندورة مشوية + بصل + مكس أجبان + روست بييف محمص + صوص برغر</td>
+                        <td class="price">2.40</td>
+                        <td class="price">3.75</td>
+                    </tr>
+                    <tr>
+                        <td>برغر فاير هاوس (بافلو برغر)</td>
+                        <td>قطعة برغر 300 غم + مخلل + خس + هالبينو حار + روست بييف + بندورة + بصل + جبنة شيدر + بافلو صوص + صوص برغر</td>
+                        <td class="price">2.40</td>
+                        <td class="price">3.75</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 3. الطلبات الجانبية -->
+            <div class="menu-card">
+                <h2>ثالثاً: الطلبات الجانبية</h2>
+                <table>
+                    <tr>
+                        <th>الصنف</th>
+                        <th>التفاصيل والحجم</th>
+                        <th>السعر</th>
+                    </tr>
+                    <tr>
+                        <td>صحن بطاطا صغير مع مثومة</td>
+                        <td>200 غم</td>
+                        <td class="price">0.65</td>
+                    </tr>
+                    <tr>
+                        <td>صحن بطاطا ودجز صغير مع مثومة</td>
+                        <td>200 غم</td>
+                        <td class="price">0.95</td>
+                    </tr>
+                    <tr>
+                        <td>علبة مثومة</td>
+                        <td>200 غم</td>
+                        <td class="price">0.50</td>
+                    </tr>
+                    <tr>
+                        <td>علبة سلطة كولسلو</td>
+                        <td>200 غم</td>
+                        <td class="price">0

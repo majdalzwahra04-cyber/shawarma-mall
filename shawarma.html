@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>شورما مول - أنواع الشاورما</title>
+    
+    <!-- التصميم العصري المعتمد للموقع -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 950px;
+            background-color: #1e1e1e;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .hero-header {
+            background: linear-gradient(135deg, #ff8f00, #ff6f00);
+            color: #000;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .hero-header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .content-body {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #ffb300;
+            font-size: 20px;
+            border-right: 4px solid #ffb300;
+            padding-right: 10px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* شبكة التنقل العلوية */
+        ul.nav-grid {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        ul.nav-grid a {
+            display: block;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid #444;
+            transition: all 0.3s ease;
+        }
+
+        ul.nav-grid a:hover {
+            background-color: #ffb300;
+            color: #000000;
+            border-color: #ffb300;
+        }
+
+        /* تنسيق جدول المنيو والأسعار */
+        .menu-card {
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #383838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: right;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            color: #ffb300;
+            font-size: 17px;
+        }
+
+        td {
+            color: #e0e0e0;
+            font-size: 15px;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 179, 0, 0.05);
+        }
+
+        .price {
+            color: #ffb300;
+            font-weight: bold;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- ترويسة الصفحة -->
+        <div class="hero-header">
+            <h1>منشور شاورما مول 🌯</h1>
+            <p>المنيو الرسمي والأسعار المعتمدة في الزرقاء</p>
+        </div>
+
+        <div class="content-body">
+
+            <!-- شريط التنقل -->
+            <nav>
+                <ul class="nav-grid">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="shawarma.html" style="background-color: #ffb300; color: #000;">أنواع الشاورما</a></li>
+                    <li><a href="snacks.html">البرغر والبروستد</a></li>
+                    <li><a href="chicken.html">الدجاج ب أنواعه</a></li>
+					<li><a href="offers.html">العروض</a></li>
+                </ul>
+            </nav>
+
+            <!-- 1. شاورما دجاج -->
+            <div class="menu-card">
+                <h2>شاورما دجاج</h2>
+                <table>
+                    <tr>
+                        <th>الصنف / الوجبة</th>
+                        <th>المكونات والتفاصيل</th>
+                        <th>السعر</th>
+                    </tr>
+                    <tr>
+                        <td>سندويش صغير</td>
+                        <td>50 غم</td>
+                        <td class="price">0.60</td>
+                    </tr>
+                    <tr>
+                        <td>سندويش كبير</td>
+                        <td>100 غم</td>
+                        <td class="price">1.10</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة عادي</td>
+                        <td>سندويش 100 غم + بطاطا 300 غم + ثومية + مخلل + خضار طازجة (25 غم)</td>
+                        <td class="price">2.00</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة سوبر</td>
+                        <td>سندويش 150 غم + بطاطا 300 غم + ثومية + مخلل + خضار طازجة (25 غم) + سلطة</td>
+                        <td class="price">2.50</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة دبل</td>
+                        <td>2 سندويش 100 غم + بطاطا 300 غم + ثومية + مخلل + خضار طازجة (25 غم) + سلطة</td>
+                        <td class="price">3.00</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة تريبل</td>
+                        <td>3 سندويشات 100 غم + بطاطا 300 غم + ثومية + مخلل + خضار طازجة (25 غم) + سلطة</td>
+                        <td class="price">4.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 2. شاورما اللحمة -->
+            <div class="menu-card">
+                <h2>شاورما اللحمة</h2>
+                <table>
+                    <tr>
+                        <th>الصنف / الوجبة</th>
+                        <th>المكونات والتفاصيل</th>
+                        <th>السعر</th>
+                    </tr>
+                    <tr>
+                        <td>سندويش كبير</td>
+                        <td>100 غم</td>
+                        <td class="price">1.20</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة عادي</td>
+                        <td>سندويش 100 غم + بطاطا 300 غم + طحينية + مخلل + خضار طازجة (25 غم)</td>
+                        <td class="price">2.10</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة سوبر</td>
+                        <td>سندويش 150 غم + بطاطا 300 غم + طحينية + مخلل + سلطة جرجير + خضار طازجة (25 غم)</td>
+                        <td class="price">2.75</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة دبل</td>
+                        <td>2 سندويش 100 غم + بطاطا 300 غم + طحينية + مخلل + سلطة جرجير + خضار طازجة (25 غم)</td>
+                        <td class="price">3.50</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة تريبل</td>
+                        <td>3 سندويشات 100 غم + بطاطا 300 غم + طحينية + مخلل + سلطة جرجير + خضار طازجة (25 غم)</td>
+                        <td class="price">4.50</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 3. شاورما توست (ايطالي) -->
+            <div class="menu-card">
+                <h2>شاورما توست (ايطالي)</h2>
+                <p style="font-size: 14px; color: #aaa; margin-bottom: 10px;">(شاورما دجاج أو لحمة - فلفل حلو - فطر - زيتون أسود - جبنة شيدر - كريمة - صوص باربكيو - مئومة)</p>
+                <table>
+                    <tr>
+                        <th>الصنف / الوجبة</th>
+                        <th>المكونات والتفاصيل</th>
+                        <th>السعر</th>
+                    </tr>
+                    <tr>
+                        <td>وجبة عادي</td>
+                        <td>2 سندويش + بطاطا + مئومة + مخلل + خضار طازجة (25 غم - صينية)</td>
+                        <td class="price">2.65</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة سوبر</td>
+                        <td>3 سندويشات + بطاطا + مئومة + مخلل + خضار طازجة (25 غم - صينية) + طحينية</td>
+                        <td class="price">3.25</td>
+                    </tr>
+                    <tr>
+                        <td>وجبة دبل</td>
+                        <td>4 سندويشات + بطاطا + مئومة + مخلل + خضار طازجة (25 غم - صينية) + طحينية</td>
+                        <td class="price">4.50</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 4. شاورما ايطالي -->
+            <div class="menu-card">
+                <h2>شاورما ايطالي</h2>
+                <p style="font-size: 14px; color: #aaa; margin-bottom: 10px;">(شاورما دجاج أو لحمة - فلفل حلو - فطر - مئومة - زيتون أسود - جبنة موزاريلا - كريمة - صوص باربكيو)</p>
+                <table>
+                    <tr>
+                        <th>الصنف / الوجبة</th>
+                        <th>المكونات والتفاصيل</th>
+                        <th>السعر</th>
+                    </tr>
+                    <tr>
+                        <td>دجاج</td>
+                        <td>200 غم شاورما دجاج - بطاطا 200 غم - مئومة 150 غم - مخلل 150 غم - سلطة 150 غم</td>
+                        <td class="price">3.90</td>
+                    </tr>
+                    <tr>
+                        <td>لحمة</td>
+                        <td>200 غم شاورما لحمة - بطاطا 200 غم - طحينية 150 غم - مخلل 150 غم - سلطة 150 غم</td>
+                        <td class="price">4.50</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 5. شاورما حلبي -->
+            <div class="menu-card">
+                <h2>شاورما حلبي</h2>
+                <p style="font-size: 14px; color: #aaa; margin-bottom: 10px;">(شاورما دجاج أو لحمة 200 غم - فلفل حلو - مئومة - زيتون أسود - جبنة شيدر)</p>
+                <table>
+                    <tr>
+                        <th>الصنف / الوجبة</th>
+                        <th>المكونات والتفاصيل</th>
+                        <th>السعر</th>
+                    </tr>
+                    <tr>
+                        <td>دجاج</td>
+                        <td>200 غم شاورما دجاج - بطاطا 200 غم - مئومة 150 غم - مخلل 150 غم - سلطة 150 غم</td>
+                        <td class="price">3.50</td>
+                    </tr>
+                    <tr>
+                        <td>لحمة</td>
+                        <td>200 غم شاورما لحمة - بطاطا 200 غم - طحينية 150 غم - مخلل 150 غم - سلطة 150 غم</td>
+                        <td class="price">4.00</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
